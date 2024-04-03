@@ -11,7 +11,7 @@ body{
     background: url(img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: auto;
 }
 header{
     display: flex;
@@ -135,4 +135,66 @@ footer .cards{
 }
 .cards .card:hover ~ .card{
     transform: translateX(140px);
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    
+    body {
+        overflow: auto;
+        background: url(https://i.pinimg.com/736x/29/8b/cb/298bcb39f67d2330b78c81f9f5f28e71.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    header .navigation ul{
+        display: none;
+    }
+    .cards .card{
+        display: none;
+    }
+    main section .logoBoys {
+        margin-left: 70px;
+        width: 15em;
+    }
+    footer .cards {
+        margin-left: 5em;
+    }
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width: 568px) {
+    body {
+        overflow: auto;
+        background: url(https://i.pinimg.com/736x/29/8b/cb/298bcb39f67d2330b78c81f9f5f28e71.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    header .navigation ul{
+        display: none;
+    }
+    .cards .card{
+        display: none;
+    }
+    main section .logoBoys {
+        margin-left: 70px;
+        width: 15em;
+    }
+    footer .cards {
+        margin-left: 5em;
+    }
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: max-content;
+    }
 }
